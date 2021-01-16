@@ -1,6 +1,13 @@
 import React from 'react'
 import { Button } from '../../GlobalStyles'
 import {
+  FaFacebook,
+  FaInstagram,
+  FaYoutube,
+  FaTwitter,
+  FaLinkedin,
+} from 'react-icons/fa'
+import {
   FooterContainer,
   FooterSubscription,
   FooterSubHeading,
@@ -12,6 +19,13 @@ import {
   FooterLinksItem,
   FooterLinkTitle,
   FooterLink,
+  SocialMedia,
+  SocialMediaWrapper,
+  SocialLogo,
+  SocialIcon,
+  WebsiteRights,
+  SocialIcons,
+  SocialIconLink,
 } from './styles'
 
 const Footer = () => {
@@ -45,6 +59,8 @@ const Footer = () => {
             <FooterLink to='/sign-up'>Investors</FooterLink>
             <FooterLink to='/sign-up'>Terms of service</FooterLink>
           </FooterLinksItem>
+        </FooterLinksWrapper>
+        <FooterLinksWrapper>
           <FooterLinksItem>
             <FooterLinkTitle>About Us</FooterLinkTitle>
             <FooterLink to='/sign-up'>How it works</FooterLink>
@@ -55,17 +71,32 @@ const Footer = () => {
           </FooterLinksItem>
         </FooterLinksWrapper>
       </FooterLinksContainer>
-      {/* <SocialMedia>
+      <SocialMedia>
         <SocialMediaWrapper>
           <SocialLogo>
-            <SocialIcon>ULTRA</SocialIcon>
-            <WebsiteRights>ULTRA &copy; 2020</WebsiteRights>
-            <SocialIcons>
-              <SocialIconLink>Facebook</SocialIconLink>
-            </SocialIcons>
+            <SocialIcon />
+            ULTRA
           </SocialLogo>
+          <WebsiteRights>ULTRA &copy; 2020</WebsiteRights>
+          <SocialIcons>
+            <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
+              <FaFacebook />
+            </SocialIconLink>
+            <SocialIconLink href='/' target='_blank' aria-label='Instagram'>
+              <FaInstagram />
+            </SocialIconLink>
+            <SocialIconLink href='/' target='_blank' aria-label='Youtube'>
+              <FaYoutube />
+            </SocialIconLink>
+            <SocialIconLink href='/' target='_blank' aria-label='Twitter'>
+              <FaTwitter />
+            </SocialIconLink>
+            <SocialIconLink href='/' target='_blank' aria-label='LinkedIn'>
+              <FaLinkedin />
+            </SocialIconLink>
+          </SocialIcons>
         </SocialMediaWrapper>
-      </SocialMedia> */}
+      </SocialMedia>
     </FooterContainer>
   )
 }

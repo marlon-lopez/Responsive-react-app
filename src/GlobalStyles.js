@@ -29,7 +29,6 @@ export const Button = styled.button`
   border: none;
   cursor: pointer;
   outline: none;
-
   @media screen and (max-width: 960px) {
     width: 100%;
   }
