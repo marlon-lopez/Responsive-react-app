@@ -22,7 +22,7 @@ export const Container = styled.div`
 export const Button = styled.button`
   border-radius: 4px;
   font-size: 1.2rem;
-  padding: 5px 16px;
+  padding: 8px 16px;
   background: #434fec;
   white-space: nowrap;
   color: white;

@@ -89,7 +89,6 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   padding: 0.5rem 1rem;
   @media screen and (max-width: 960px) {
-    padding: 2rem;
     width: 100%;
 
     &:hover {
